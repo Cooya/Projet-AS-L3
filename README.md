@@ -1,2 +1,2 @@
 # Projet-AS-L3
-C and Latex parser for documentation generation
+Project imported from https://services.emi.u-bordeaux.fr/projet/git/pp32015 accomplished in third year of bachelor. We was three to realize this project. We had to implement a program comparable to Doxygen (Java documentation generator), that means parse C sources and their integrated documentation (in Latex) to generate a complete documentation as HTML files readable from a web browser.
