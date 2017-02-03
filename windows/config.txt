@@ -1,0 +1,4 @@
+Pour lancer Flex et Bison sous Windows, dans Codeblocks, ajouter cette ligne :
+cmd /c "cd windows & flex ../grammar/scan.l & bison -dy ../grammar/parse.y & move *.c  .. & move *.h .."
+dans "Projet build options", onglet "Pre/post build steps", zone "Pre-build steps".
+Pour éviter des problèmes, cocher la case "Always execute, even if target is up-to-date".

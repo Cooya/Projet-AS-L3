@@ -1,0 +1,33 @@
+Symboles importants :
+storage_class_specifier : TYPEDF EXTERN STATIC THREAD_LOCAL AUTO REGISTER
+type_qualifier : CONST RESTRICT VOLATILE ATOMIC 
+type_specifier : VOID CHAR SHORT INT LONG FLOAT DOUBLE SIGNED UNSIGNED BOOL COMPLEX IMAGINARY atomic_type_specifier struct_or_union_specifier enum_specifier TYPEDEF_NAME
+function_specifier : INLINE NORETURN
+struct_or_union : STRUCT UNION
+IDENTIFIER (chaîne de caractères) = nom d'une variable, structure ou fonction
+
+Expressions principales de la grammaire :
+- translation_unit : code source entier --> liste d'external_declaration
+- external_declaration : cela peut être une définition de fonction ou une déclaration située en dehors d'une fonction (variables, structures ou fonctions)
+- function_definition : prototype + définition de la fonction --> declaration_specifiers declarator (declaration_list) compound_statement
+- declaration : déclaration de n'importe quoi (fonctions, variables ou structures) --> declaration_specifiers + listes de declarator
+- compound_statement : définition (corps) de fonction
+
+Tout ce qui est déclaration et prototype de fonction :
+- declaration_specifiers : tout ce qui précède le nom d'une variable, d'une fonction ou d'une structure (pour faire simple, c'est le type)
+- declarator : étoile(s) de pointeur + nom de variable ou de fonction --> (pointer) direct_declarator
+- pointer : mots-clé + étoile(s) de pointeur --> '*' ((type_qualifier_list) (pointer))
+- direct_declarator : nom de variable (+ indice(s)) ou de fonction (+ paramètre(s))
+- parameter_type_list/parameter_list : liste des paramètres d'une fonction --> liste de parameter_declaration
+- parameter_declaration : paramètres d'une fonction --> declaration_specifiers (declarator ou abstract_declarator)
+- abstract_declarator : tout ce qui peut suivre un nom ou un type de paramètre (étoile(s), crochets, parenthèses, etc) --> (pointer) direct_abstract_declarator ou pointer
+
+Tout ce qui définition d'une fonction :
+- 
+
+
+
+
+
+
+

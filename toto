@@ -1,0 +1,11 @@
+int salut = 10;
+
+int main(int argc, char **argv){
+	int test = 2*5;
+	{
+        int test;
+		test = 1;
+	}
+	test=3;
+	return 0;
+}

@@ -1,0 +1,115 @@
+.codeContent {
+	background-color: #23241f;
+	width:100%;
+	font-size:14px;
+}
+
+.codeContent a {
+	text-decoration:none;
+}
+
+
+.syntaxOperator {
+	color: #f92672;
+}
+
+.syntaxIdentifier {
+	color: #f8f8f2;
+}
+
+.syntaxSpecialWord {
+	color: #66d9ef;
+	font-weight: bold;
+}
+
+.syntaxString {
+	color: #e6db74;
+}
+
+.syntaxConstant {
+	color: #ae81ff;
+}
+
+.lineWrapper {
+	position:relative;
+	height:16px;
+	line-height: 16px;
+	width:100%;
+}
+
+.lineCounterBar {
+	background-color: rgb(30, 30, 30);
+	width:40px;
+	height:100%;
+	left:300px;
+	top:0px;
+	position:fixed;
+}
+
+.lineCounter {
+	color: rgb(90, 90, 90);
+	/*padding-right:10px;*/
+	width:40px;
+	margin-right: 3px;
+	display:inline-block;
+}
+
+.syntaxIndent {
+	display:inline-block;
+	margin-left:16px;
+}
+
+.blockButton {
+	position:absolute;
+	top:2px;
+	margin-left:43px;
+	border: 1px solid #adada9;
+	color: #adada9;
+	width:11px;
+	height:11px;
+	text-align:center;
+}
+
+.blockButton:hover {
+	color:#f8f8f2;
+	border: 1px solid #f8f8f2;
+	cursor: pointer;
+}
+
+.blockBar {
+	position:absolute;
+	top:-1px;
+	margin-left:49px; /* 43+6 */
+	border-left:1px dotted #adada9;
+	height:17px;
+	width:0px;
+}
+
+.blockBarEnd {
+	position:absolute;
+	top:-1px;
+	margin-left:49px; /* 43+6 */
+	border-left:1px dotted #adada9;
+	border-bottom:1px dotted #adada9;
+	height:9px;
+	width:9px;
+}
+
+.blockButtonText {
+	font-size:13px;
+	margin-top:-3px;
+}
+
+.integratedInfo {
+	color:#adada9;
+}
+
+.codeContent pre {
+	margin:0px;
+	padding-top:3px;
+	position:relative;
+}
+
+.syntaxHighlight {
+	background-color: #4b4d42;
+}

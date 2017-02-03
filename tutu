@@ -1,0 +1,15 @@
+int salut = 10;
+
+int main(int argc, char **argv){
+	int test = 2*5;
+	{{
+		char a;
+
+	}
+        int test;{{}}
+		test = 1; {
+		char t;
+	}}
+	test=3;
+	return 0;
+}

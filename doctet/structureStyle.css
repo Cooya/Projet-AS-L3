@@ -1,0 +1,92 @@
+/* Positioning */
+
+#leftPanel, #contentWrapper {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	overflow:auto;
+}
+
+#leftPanel {
+	left: 0px;
+	width: 300px;
+
+	-moz-box-shadow: inset -3px 0px 3px -3px rgba(0, 0, 0, 0.7), inset -300px 0px 300px -300px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: inset -3px 0px 3px -3px rgba(0, 0, 0, 0.7), inset -300px 0px 300px -300px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: inset -3px 0px 3px -3px rgba(0, 0, 0, 0.7), inset -300px 0px 300px -300px rgba(0, 0, 0, 0.5);
+	box-shadow: inset -3px 0px 3px -3px rgba(0, 0, 0, 0.7), inset -300px 0px 300px -300px rgba(0, 0, 0, 0.5);
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=180, Strength=3);*/
+}
+
+#contentWrapper {
+	left: 300px;
+	right: 0px;
+}
+
+/* Display */
+
+#leftPanel {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(50,52,43);
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(opensans.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+	font-family: 'Open Sans';
+	background-color: #23241f;
+	color: #f8f8f2;
+}
+
+h1 {
+	margin:20px;
+}
+
+.menuLink, .menuLinkInactive {
+	text-decoration:none;
+	text-indent:15px;
+	font-size:18px;
+}
+
+.menuLink {
+	color: #f8f8f2;
+}
+
+.menuLinkInactive {
+	color: #adada9;
+}
+
+.menuLink:hover {
+	text-indent: 20px;
+}
+
+.menuLinkBlock {
+	margin-left:10px;
+	height:30px;
+	line-height:30px;
+}
+
+.menuLinkSelected {
+	background-color:rgb(30, 30, 30);
+
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+	-o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.7), Direction=NaN, Strength=5);
+
+	-moz-border-top-left-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+
+	-moz-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}

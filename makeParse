@@ -1,0 +1,29 @@
+# Makefile
+# Lex : scan.l
+# Bison : parse.y
+#
+LEX     = flex
+YACC    = bison
+YFLAGS  = -y -d
+CC = gcc
+CFLAGS = -std=c99 -g -Wall
+
+lex.yy.c: scan.l y.tab.h
+	$(LEX) scan.l
+
+scan.h: scan.l
+	$(LEX) scan.l
+
+y.tab.c y.tab.h: parse.y
+	$(YACC) parse.y $(YFLAGS)
+
+
+.PHONY: clean analysis
+
+analysis: lex.yy.c y.tab.c y.tab.h 
+
+clean:
+	-rm -f y.tab.c
+	-rm -f y.tab.h
+	-rm -f lex.yy.c
+
